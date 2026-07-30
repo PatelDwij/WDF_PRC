@@ -3,18 +3,58 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Register</title>
+        <link rel="Stylesheet" href="Register.css">
     </head>
     <body>
         <main>
-        
+        <section>
                 <h2><i>Register New Account</i></h2>
                 <table border="4" cellspacing="3" cellpadding="5">
                     <tr>
                     <td><label for="full name" >Full Name:</label></td>
-                    
-                    
                     <td><input type="text" id="Full Name" name="Full Name" placeholder="Enter your full name" required></td>
+                    
                     </tr>
+                    <tr>
+                            <td><label for="Email">Email Address:</label></td>
+                            <td><input type="email" id="Email" name="Email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <tr>
+                            <td><label for="Password">Password:</label></td>
+                            <td><input type="password" id="Password" name="Password" placeholder="Enter your password" required></td>
+                    </tr>
+
+                    <tr>
+                            <td><label for="Mobile">Mobile Number:</label></td>
+                            <td><input type="tel" id="Mobile" name="Mobile" placeholder="Enter your mobile number" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Gender">Gender:</label></td>
+                            <td>
+                                <select id="Gender" name="Gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Semester">Semester:</label></td>
+                            <td>
+                                <select id="Semester" name="Semester" required>
+                                    <option value="">Select Semester</option>
+                                    <option value="1">Semester 1</option>
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                    <option value="4">Semester 4</option>
+                                    <option value="5">Semester 5</option>
+                                    <option value="6">Semester 6</option>
+                                    <option value="7">Semester 7</option>
+                                    <option value="8">Semester 8</option>
+                                </select>
+                            </td>
+                        </tr>
                     <tr>
                     <td><label for="Role">Select Role:</label></td>
                     <td><select Id="Role" name="Role">
@@ -28,6 +68,7 @@
                     <td><button type="submit">Register</button></td>
                     </tr>
                 </table>
+   
                 
                 </form>
             </section>

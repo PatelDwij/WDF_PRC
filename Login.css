@@ -42,15 +42,7 @@ main{
     text-align: center;
     padding: 50px 50px;
 }
-.box{
-    flex:0;
-    min-width: auto;
-    border: 2px solid #000000;
-    
-    border-radius: 5px;
-    text-align: center;
-    background: rgb(186, 237, 255);
-}
+
 section{
     background: white;
     width: auto;
@@ -61,6 +53,29 @@ section{
     box-shadow:inset;
     padding: 20px;
 
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:10px;
+}
+
+
+label{
+    font-weight:bold;
+}
+
+
+input{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
 }
 
 button{
