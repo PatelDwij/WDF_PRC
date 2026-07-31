@@ -1,32 +1,95 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Student Dashboard</title>
-        <link rel="Stylesheet" href="Student_dashboard.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Dashboard</title>
+    <link rel="stylesheet" href="Student_dashboard.css">
+</head>
 
-    </head>
-    <body>
-        <header>
-            <h1>Student Dashboard</h1>
+<body>
+
+<div class="dashboard">
+
+    
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="photo">👤</div>
+            <h3>Dwij Patel</h3>
+            
+        </div>
+
+        <nav>
+            <a href="Student_dashboard.html"> Dashboard</a>
+            <a href="Profile.html"> Profile</a>
+            <a href="Timetable.html"> Timetable</a>
+            <a href="Attendance.html"> Attendance</a>
+            <a href="courses.html"> Subjects</a>
+            <a href="Notices.html"> Notices</a>
+        </nav>
+    </aside>
+
+    
+    <main class="content">
+
+        <header class="topbar">
+            <h1>Welcome to StudentHub Portal</h1>
+            <a href="Login.html">
+                <button class="logout">Logout</button>
+            </a>
         </header>
-        <main>
-            <section>
-                <h2>Welcome, Student!</h2>
-                <p>Welcome back! Here is your overview.</p>
-                <ul>
-                    <li><a href="Timetable.html">View Timetable</a></li>
-                    <li><a href="Attendance.html">Check Attendance</a></li>
-                    <li><a href="Notices.html">View Notices</a></li>
-                    <li><a href="courses.html">View Courses</a></li>
-                    <li><a href="Profile.html">Profile</a></li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <hr>
-            <p>&copy; 2026 Dwij Patel; All Rights Reserved</p>
-            <a href="Contact.html">Contact Us</a>
-        </footer>
-    </body>
+
+        
+        <section class="card">
+            <h2>Welcome, Dwij Patel</h2>
+            <div class="details">
+                <p><strong>Enrollment :</strong> 25CE077</p>
+                <p><strong>Institute :</strong> CSPIT</p>
+                <p><strong>Department :</strong> Computer Engineering</p>
+                <p><strong>Semester :</strong> 3</p>
+                <p><strong>Academic Year :</strong> 2026-27</p>
+                <p><strong>Email :</strong> 25ce077@charusat.edu.in</p>
+            </div>
+        </section>
+
+        
+        <section class="card">
+            <h2>Academic Overview</h2>
+            <div class="overview">
+                <div class="box">
+                    <h3>90%</h3>
+                    <p>Attendance</p>
+                </div>
+                <div class="box">
+                    <h3>8.75</h3>
+                    <p>SGPA</p>
+                </div>
+                <div class="box">
+                    <h3>8.42</h3>
+                    <p>CGPA</p>
+                </div>
+                <div class="box">
+                    <h3>Paid</h3>
+                    <p>Fee Status</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="card">
+            <h2>Quick Services</h2>
+            <div class="services">
+                <button onclick="location.href='Timetable.html'">Timetable</button>
+                <button onclick="location.href='Attendance.html'">Attendance</button>
+                <button onclick="location.href='courses.html'">Subjects</button>
+                <button onclick="location.href='Notices.html'">Notices</button>
+                <button onclick="location.href='Profile.html'">Profile</button>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
 </html>
