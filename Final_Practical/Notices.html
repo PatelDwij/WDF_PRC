@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub | Notice Board</title>
     <link rel="stylesheet" href="Notices.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,6 @@
             <li><a href="Student_dashboard.html">Back To Dashboard</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="attendance.html">Attendance</a></li>
-           
             <li><a href="profile.html">Profile</a></li>
         </ul>
     </nav>
@@ -26,17 +26,21 @@
         <section>
             <h2>Notice Board</h2>
             
-            <article>
-                <h3>Lab Submissions Deadline</h3>
-                <p><strong>Date:</strong> <time datetime="2026-07-12">July 12, 2026</time></p>
-                <p>All students must submit Practical 1 to their respective GitHub repositories by the end of the week.</p>
-            </article>
-            <hr>
-            <article>
-                <h3>Upcoming Hackathon</h3>
-                <p><strong>Date:</strong> <time datetime="2026-07-10">July 10, 2026</time></p>
-                <p>Registration for the annual coding hackathon is now open. Form your teams and submit your ideas.</p>
-            </article>
+            <article style="background: none; border: none; padding: 0;">
+    <button class="collapsible-btn">Lab Submissions Deadline ▼</button>
+    <div class="collapsible-content">
+        <p><strong>Date:</strong> <time datetime="2026-07-12">July 12, 2026</time></p>
+        <p>All students must submit Practical 1 to their respective GitHub repositories by the end of the week.</p>
+    </div>
+</article>
+<br>
+<article style="background: none; border: none; padding: 0;">
+    <button class="collapsible-btn">Upcoming Hackathon ▼</button>
+    <div class="collapsible-content">
+        <p><strong>Date:</strong> <time datetime="2026-07-10">July 10, 2026</time></p>
+        <p>Registration for the annual coding hackathon is now open. Form your teams and submit your ideas.</p>
+    </div>
+</article>
         </section>
     </main>
 

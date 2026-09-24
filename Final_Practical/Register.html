@@ -15,29 +15,49 @@
         <main>
         <section>
                 <h2><i>Register New Account</i></h2>
+                <form id="registerForm">
                 <table border="4" cellspacing="3" cellpadding="5">
                     <tr>
-                    <td><label for="full name" >Full Name:</label></td>
-                    <td><input type="text" id="Full Name" name="Full Name" placeholder="Enter your full name" required></td>
+                    <td><label for="fullName" >Full Name:</label></td>
+                    <td><input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    <p id="nameError" class="error"></p>
+                    </td>
                     
                     </tr>
                     <tr>
-                            <td><label for="Email">Email Address:</label></td>
-                            <td><input type="email" id="Email" name="Email" placeholder="Enter your email" required></td>
+                            <td><label for="email">Email Address:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <p id="emailError" class="error"></p>
+                            </td>
                     </tr>
                     <tr>
-                            <td><label for="Password">Password:</label></td>
-                            <td><input type="password" id="Password" name="Password" placeholder="Enter your password" required></td>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <p id="passwordStrength"></p>
+                            <p id="passwordError" class="error"></p>
+                            </td>
                     </tr>
 
                     <tr>
-                            <td><label for="Mobile">Mobile Number:</label></td>
-                            <td><input type="tel" id="Mobile" name="Mobile" placeholder="Enter your mobile number" required></td>
+                        <td>
+                            <label for="confirmPassword">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                            <p id="confirmPasswordError" class="error"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td><label for="mobile">Mobile Number:</label></td>
+                            <td><input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" maxlength="10" required>
+                            <p id="mobileError" class="error"></p>
+                            </td>
                         </tr>
                         <tr>
-                            <td><label for="Gender">Gender:</label></td>
+                            <td><label for="gender">Gender:</label></td>
                             <td>
-                                <select id="Gender" name="Gender" required>
+                                <select id="gender" name="gender" required>
                                     <option value="">Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -46,43 +66,69 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="Semester">Semester:</label></td>
-                            <td>
-                                <select id="Semester" name="Semester" required>
-                                    <option value="">Select Semester</option>
-                                    <option value="1">Semester 1</option>
-                                    <option value="2">Semester 2</option>
-                                    <option value="3">Semester 3</option>
-                                    <option value="4">Semester 4</option>
-                                    <option value="5">Semester 5</option>
-                                    <option value="6">Semester 6</option>
-                                    <option value="7">Semester 7</option>
-                                    <option value="8">Semester 8</option>
-                                </select>
-                            </td>
+                        <td>
+                            <label for="year">Year:</label>
+                        </td>
+
+                        <td>
+                            <select id="year" name="year" required>
+                                <option value="">Select Year</option>
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
+                                <option value="Fourth Year">Fourth Year</option>
+                            </select>
+
+                            <p id="yearError" class="error"></p>
+                        </td>
                         </tr>
                     <tr>
-                    <td><label for="Role">Select Role:</label></td>
-                    <td><select Id="Role" name="Role">
-                        <option value="role">Select Role</option>
+                    <td>
+                        <label for="course">Course:</label>
+                    </td>
+
+                    <td>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="Computer Engineering">Computer Engineering</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electronics Engineering">Electronics Engineering</option>
+                        </select>
+
+                        <p id="courseError" class="error"></p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><label for="role">Select Role:</label></td>
+                    <td><select id="role" name="role" required>
+                        <option value="">Select Role</option>
                         <option value="Student">Student</option>
                         <option value="Faculty">Faculty</option>
-                    </select></td>
+                    </select>
+                    <p id="roleError" class="error"></p>
+                    </td>
                     </tr>
-                    <br>
+                    
                     <tr>
                     <td><button type="submit">Register</button></td>
                     </tr>
+                    
                 </table>
-   
                 
                 </form>
+                <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">I accept the terms and conditions</label>
+                        <p id="termsError" class="error"></p>
             </section>
+            
         </main>
+        
         <footer>
             <hr>
             <p>&copy; 2026 Dwij Patel; All Rights Reserved</p>
             <a href="Contact.html">Contact Us</a>
         </footer>
+        <script src="Register.js"></script>
     </body>
 </html>

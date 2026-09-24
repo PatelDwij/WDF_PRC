@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Dashboard</title>
     <link rel="stylesheet" href="Student_dashboard.css">
+    <script src="script.js" defer></script>
+    
 </head>
 
 <body>
+    <div id="notification-banner" class="banner">
+    <span>📢 <strong>Alert:</strong> Practical 4 evaluations are starting soon.</span>
+    <button id="close-banner">✖</button>
+</div>
 
 <div class="dashboard">
 
@@ -34,9 +40,10 @@
 
         <header class="topbar">
             <h1>Welcome to StudentHub Portal</h1>
-            <a href="Login.html">
+            
+                <button id="theme-toggle" class="logout" style="background-color: #333; margin-right: 10px;">🌙 Theme</button>
                 <button class="logout">Logout</button>
-            </a>
+           
         </header>
 
         
@@ -79,6 +86,7 @@
         <section class="card">
             <h2>Quick Services</h2>
             <div class="services">
+                <button id="open-modal-btn">Show Status</button>
                 <button onclick="location.href='Timetable.html'">Timetable</button>
                 <button onclick="location.href='Attendance.html'">Attendance</button>
                 <button onclick="location.href='courses.html'">Subjects</button>
@@ -89,6 +97,13 @@
 
     </main>
 
+</div>
+<div id="welcome-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Portal Status</h2>
+        <p>All backend services are running smoothly. Your session is active.</p>
+    </div>
 </div>
 
 </body>

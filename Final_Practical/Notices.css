@@ -136,3 +136,34 @@ footer a {
 footer a:hover {
     color: red;
 }
+
+
+
+
+
+/* Collapsible Component */
+.collapsible-btn {
+    background-color: #30bfe3;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.collapsible-btn.active, .collapsible-btn:hover {
+    background-color: #219ebc;
+}
+.collapsible-content {
+    padding: 15px;
+    display: none;
+    background-color: #f8fdff;
+    border: 1px solid #aed4e5;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
