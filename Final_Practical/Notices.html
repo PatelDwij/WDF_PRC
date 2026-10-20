@@ -15,39 +15,52 @@
 
     <nav>
         <ul>
-            <li><a href="Student_dashboard.html">Back To Dashboard</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="attendance.html">Attendance</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Student_dashboard.html">Dashboard</a></li>
+            <li><a href="Directory.html">Directory</a></li>
+            <li><a href="courses.html">Subjects</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>Notice Board</h2>
+        <section class="card">
+            <h2>Campus Notice Board</h2>
             
-            <article style="background: none; border: none; padding: 0;">
-    <button class="collapsible-btn">Lab Submissions Deadline ▼</button>
-    <div class="collapsible-content">
-        <p><strong>Date:</strong> <time datetime="2026-07-12">July 12, 2026</time></p>
-        <p>All students must submit Practical 1 to their respective GitHub repositories by the end of the week.</p>
-    </div>
-</article>
-<br>
-<article style="background: none; border: none; padding: 0;">
-    <button class="collapsible-btn">Upcoming Hackathon ▼</button>
-    <div class="collapsible-content">
-        <p><strong>Date:</strong> <time datetime="2026-07-10">July 10, 2026</time></p>
-        <p>Registration for the annual coding hackathon is now open. Form your teams and submit your ideas.</p>
-    </div>
-</article>
+            <article class="notice-item">
+                <button class="collapsible-btn">Lab Submissions Deadline ▼</button>
+                <div class="collapsible-content">
+                    <p><strong>Date:</strong> <time datetime="2026-07-12">July 12, 2026</time></p>
+                    <p>All students must submit Practical 1 to their respective GitHub repositories by the end of the week.</p>
+                </div>
+            </article>
+
+            <article class="notice-item">
+                <button class="collapsible-btn">Upcoming Hackathon 2026 ▼</button>
+                <div class="collapsible-content">
+                    <p><strong>Date:</strong> <time datetime="2026-07-10">July 10, 2026</time></p>
+                    <p>Registration for the annual coding hackathon is now open. Form your teams and submit your project ideas.</p>
+                </div>
+            </article>
+
+            <article class="notice-item">
+                <button class="collapsible-btn">Mid-Semester Exam Schedule ▼</button>
+                <div class="collapsible-content">
+                    <p><strong>Date:</strong> <time datetime="2026-08-01">August 1, 2026</time></p>
+                    <p>The preliminary timetable for Semester 3 mid-examinations has been published. Verify your course slots.</p>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
         <hr>
         <p>&copy; 2026 Dwij Patel. All rights reserved.</p>
-        <a href="contact.html">Contact Support</a>
+        <a href="Contact.html">Contact Support</a>
     </footer>
 </body>
 </html>

@@ -269,3 +269,45 @@ body {
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode strong {
     color: #e0e0e0 !important;
 }
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 900px) {
+    .overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #aed4e5;
+    }
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .sidebar nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .topbar {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .content {
+        padding: 15px;
+    }
+    .details {
+        grid-template-columns: 1fr;
+    }
+    .overview {
+        grid-template-columns: 1fr;
+    }
+}

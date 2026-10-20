@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Directory & Events</title>
+    <link rel="stylesheet" href="Directory.css">
+    <script src="script.js" defer></script>
+    <script src="directory.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. Notification Banner -->
+    <div id="notification-banner" class="banner">
+        <span>📢 <strong>Practical 6:</strong> Live External JSON & Fetch API Explorer active.</span>
+        <button id="close-banner" aria-label="Dismiss Notification">✖</button>
+    </div>
+
+    <!-- 2. Portal Header -->
+    <header>
+        <div class="header-controls">
+            <button id="theme-toggle" type="button">🌙 Theme</button>
+        </div>
+        <h1>Student Hub Portal</h1>
+        <p><i><b>Dynamic Directory & Campus Events (Fetch API)</b></i></p>
+    </header>
+
+    <!-- 3. Navigation Bar -->
+    <nav>
+        <button class="hamburger-btn" aria-label="Toggle Navigation">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Student_dashboard.html">Dashboard</a></li>
+            <li><a href="Directory.html">Directory</a></li>
+            <li><a href="courses.html">Subjects</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- 4. Main Explorer Interface -->
+    <main>
+        <section class="card explorer-card">
+            <div class="section-heading">
+                <h2>Explore StudentHub Data</h2>
+                <p>Dynamically powered by external JSON datasets with client-side Fetch, search, filter, sort, and pagination.</p>
+            </div>
+
+            <!-- Tab Segment Controls -->
+            <div class="tabs-container" role="tablist">
+                <button class="tab-btn active" data-tab="students" role="tab" aria-selected="true">
+                    🎓 Students Directory
+                </button>
+                <button class="tab-btn" data-tab="events" role="tab" aria-selected="false">
+                    📅 Campus Events
+                </button>
+                <button class="tab-btn" data-tab="faqs" role="tab" aria-selected="false">
+                    ❓ FAQs & Knowledge Base
+                </button>
+            </div>
+
+            <!-- Search & Filter Controls Toolbar -->
+            <div class="toolbar">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search by name, ID, or keyword..." aria-label="Search records">
+                    <button id="clearSearchBtn" type="button" aria-label="Clear search" title="Clear">✖</button>
+                </div>
+
+                <div class="filter-controls">
+                    <div class="control-group">
+                        <label for="categoryFilter" id="categoryFilterLabel">Department:</label>
+                        <select id="categoryFilter" aria-label="Category Filter">
+                            <option value="all">All Departments</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="sortOrder">Sort By:</label>
+                        <select id="sortOrder" aria-label="Sort order">
+                            <option value="default">Default</option>
+                            <option value="name_asc">Name (A-Z)</option>
+                            <option value="name_desc">Name (Z-A)</option>
+                            <option value="gpa_desc">Highest GPA</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="pageSizeSelect">Show:</label>
+                        <select id="pageSizeSelect" aria-label="Page Size">
+                            <option value="6" selected>6 per page</option>
+                            <option value="12">12 per page</option>
+                            <option value="24">All records</option>
+                        </select>
+                    </div>
+
+                    <button id="resetBtn" type="button" class="btn-secondary">Reset</button>
+                </div>
+            </div>
+
+            <!-- Status Indicator Bar -->
+            <div class="status-bar">
+                <span id="resultsCount">Loading records...</span>
+                <span id="activeDatasetTag" class="dataset-tag">Dataset: students.json</span>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="spinner-container" style="display: none;">
+                <div class="spinner"></div>
+                <p>Fetching dataset via Fetch API...</p>
+            </div>
+
+            <!-- Error State Box -->
+            <div id="errorContainer" class="error-banner" style="display: none;">
+                <div class="error-content">
+                    <span class="error-icon">⚠️</span>
+                    <div>
+                        <strong id="errorTitle">Failed to load data</strong>
+                        <p id="errorMessage">Unable to fetch the requested JSON file.</p>
+                    </div>
+                </div>
+                <button id="retryBtn" type="button" class="btn-primary">Retry</button>
+            </div>
+
+            <!-- Empty State Card -->
+            <div id="emptyContainer" class="empty-state" style="display: none;">
+                <span class="empty-icon">📂</span>
+                <h3>No matching records found</h3>
+                <p>Try modifying your search keywords or resetting your filter selections.</p>
+                <button id="emptyResetBtn" type="button" class="btn-primary">Reset Filters</button>
+            </div>
+
+            <!-- Dynamic Records Grid -->
+            <div id="recordsGrid" class="records-grid" aria-live="polite">
+                <!-- Dynamically populated via directory.js -->
+            </div>
+
+            <!-- Pagination Bar -->
+            <div id="paginationWrapper" class="pagination-container">
+                <button id="prevPageBtn" class="pagination-btn" type="button" aria-label="Previous Page">❮ Previous</button>
+                <div id="pageButtons" class="page-numbers-wrapper"></div>
+                <button id="nextPageBtn" class="pagination-btn" type="button" aria-label="Next Page">Next ❯</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. Portal Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Dwij Patel; All Rights Reserved</p>
+        <a href="Contact.html">Contact Us</a>
+    </footer>
+
+</body>
+</html>

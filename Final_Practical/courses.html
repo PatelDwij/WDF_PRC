@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Courses</title>
+        <title>StudentHub | Courses & Subjects</title>
         <link rel="stylesheet" href="courses.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -12,62 +13,67 @@
             <p>Your Centralized Academic Portal</p>
         </header>
         
-        
-
-        <main>
-            <section>
-                <h2>My Courses</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Course Code</th>
-                            <th>Course Name</th>
-                            <th>Credits</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ITUC201</td>
-                            <td>Fundamental Of Computer Networking</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CSUC201</td>
-                            <td>Fundamental Of data Stucture And Algorithms</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MSUD203</td>
-                            <td>Discrete Mathematics</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>ITUE203</td>
-                            <td>Web developement Frameworks</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CEUE203</td>
-                            <td>Object Oriented Programming</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>HSUV201</td>
-                            <td>Creativity,Problem Solving and Innovation</td>
-                            <td>2</td>
-                        </tr>
-                    </tbody>
-                </table><br
-                </section>
-
-
-            <nav>
+        <nav>
             <ul>
-                <li><a href="Student_dashboard.html">Back To Dashboard</a></li>
-                
-                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Student_dashboard.html">Dashboard</a></li>
+                <li><a href="Directory.html">Directory</a></li>
+                <li><a href="courses.html">Subjects</a></li>
+                <li><a href="Attendance.html">Attendance</a></li>
+                <li><a href="Timetable.html">Timetable</a></li>
+                <li><a href="Notices.html">Notices</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <main>
+            <section class="card">
+                <h2>My Courses</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ITUC201</td>
+                                <td>Fundamental Of Computer Networking</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CSUC201</td>
+                                <td>Fundamental Of Data Structures And Algorithms</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MSUD203</td>
+                                <td>Discrete Mathematics</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>ITUE203</td>
+                                <td>Web Development Frameworks</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CEUE203</td>
+                                <td>Object Oriented Programming</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>HSUV201</td>
+                                <td>Creativity, Problem Solving and Innovation</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </main>
         
         <footer>

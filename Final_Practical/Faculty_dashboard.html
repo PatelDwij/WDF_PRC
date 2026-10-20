@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty Dashboard</title>
+    <title>StudentHub | Faculty Dashboard</title>
     <link rel="stylesheet" href="Faculty_dashboard.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>Faculty Dashboard</h1>
+        <h1>Student Hub Portal</h1>
+        <p>Faculty & Staff Administration</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Student_dashboard.html">Student Dashboard</a></li>
+            <li><a href="Faculty_dashboard.html">Faculty Dashboard</a></li>
+            <li><a href="Directory.html">Directory</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
+        <section class="card">
             <h2>Welcome, Faculty!</h2>
-            <p>Welcome back! Here is your overview.</p>
+            <p>Welcome back! Here is your quick academic overview.</p>
             
             <article>
                 <h3>Quick Actions</h3>
-                <button>Upload Material</button>
-                <button>Mark Attendance</button>
-                <button>Post New Notice</button>
+                <button type="button" onclick="alert('Upload Material module will open file selector.');">Upload Material</button>
+                <button type="button" onclick="location.href='Attendance.html'">Mark Attendance</button>
+                <button type="button" onclick="location.href='Notices.html'">Post New Notice</button>
             </article>
         </section>
     </main>

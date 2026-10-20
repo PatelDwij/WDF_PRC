@@ -56,14 +56,17 @@ main {
 }
 
 
-section {
+section,
+section.card {
     background: #ffffff;
-    width: 500px;
+    width: 100%;
+    max-width: 520px;
     margin: auto;
     border-radius: 6px;
     border: 1px solid #777;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 35px 40px;
+    box-sizing: border-box;
 }
 
 
@@ -157,3 +160,47 @@ footer a {
 footer a:hover {
     color: red;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+    section,
+    section.card {
+        padding: 20px 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode header { background-color: #1a1a1a !important; }
+.dark-mode nav { background-color: #222 !important; }
+.dark-mode nav a { color: #30bfe3 !important; }
+.dark-mode section, .dark-mode section.card {
+    background: #1e1e1e !important;
+    border-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode section > div ul {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode section > div ul li {
+    border-color: #333 !important;
+    color: #ccc !important;
+}
+.dark-mode section > div ul li strong {
+    color: #fff !important;
+}
+.dark-mode h3 {
+    color: #e0e0e0 !important;
+}
+.dark-mode footer { background-color: #1a1a1a !important; }

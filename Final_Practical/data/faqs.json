@@ -1,0 +1,98 @@
+[
+  {
+    "faq_id": "FAQ01",
+    "category": "Academics",
+    "question": "How can I access my enrolled subjects and course syllabi?",
+    "answer": "Navigate to the Subjects page from the dashboard menu. Each card displays the course code, subject title, credit weighting, and lecture distribution."
+  },
+  {
+    "faq_id": "FAQ02",
+    "category": "Attendance",
+    "question": "What is the minimum required attendance percentage at CHARUSAT?",
+    "answer": "Students must maintain a minimum of 80% overall attendance in both theory lectures and laboratory sessions to be eligible for university end-semester examinations."
+  },
+  {
+    "faq_id": "FAQ03",
+    "category": "Attendance",
+    "question": "How often are attendance records updated on StudentHub?",
+    "answer": "Faculty members mark attendance daily after each lecture and lab session. Attendance reports sync automatically every 24 hours."
+  },
+  {
+    "faq_id": "FAQ04",
+    "category": "Examination",
+    "question": "Where can I view my mid-semester and end-semester examination timetables?",
+    "answer": "Examination schedules are published under the Timetable and Notices sections two weeks prior to the commencement of exams."
+  },
+  {
+    "faq_id": "FAQ05",
+    "category": "Examination",
+    "question": "How is SGPA and CGPA calculated in the university credit system?",
+    "answer": "SGPA is calculated by multiplying credit points with grade points earned in each course per semester, divided by total semester credits. CGPA is the cumulative average across all semesters."
+  },
+  {
+    "faq_id": "FAQ06",
+    "category": "Events",
+    "question": "How do I register for campus hackathons and technical fests?",
+    "answer": "Visit the Directory & Events page, filter by Hackathon or Technical category, select your desired event, and submit your registration details."
+  },
+  {
+    "faq_id": "FAQ07",
+    "category": "Events",
+    "question": "Are participation certificates provided for attending workshops?",
+    "answer": "Yes, verified digital certificates of completion with QR verification are issued to all attendees within 7 working days of the workshop conclusion."
+  },
+  {
+    "faq_id": "FAQ08",
+    "category": "Portal Support",
+    "question": "What should I do if I forget my StudentHub account password?",
+    "answer": "Click 'Forgot Password' on the Login page or request a password reset through your registered university email address on the Profile page."
+  },
+  {
+    "faq_id": "FAQ09",
+    "category": "Portal Support",
+    "question": "Can I update my contact number or email address on the portal?",
+    "answer": "You can update non-academic contact details via the Profile Settings section. Email address modifications require departmental administrative approval."
+  },
+  {
+    "faq_id": "FAQ10",
+    "category": "Academics",
+    "question": "Where can I find lab assignment submission deadlines?",
+    "answer": "Lab assignment deadlines and practical schedules are displayed on the Campus Notice Board and highlighted in the top notification banner."
+  },
+  {
+    "faq_id": "FAQ11",
+    "category": "Academics",
+    "question": "How can I apply for university elective (UE) courses?",
+    "answer": "Elective selection windows open at the start of each odd semester. Notification circulars are posted on the notice board with online choice-filling links."
+  },
+  {
+    "faq_id": "FAQ12",
+    "category": "Portal Support",
+    "question": "How does the portal Light/Dark theme toggle work?",
+    "answer": "Click the Theme button in the navigation header to toggle between light and dark modes. Your preference is automatically stored in browser localStorage."
+  },
+  {
+    "faq_id": "FAQ13",
+    "category": "Attendance",
+    "question": "What is the procedure for medical leave attendance condonation?",
+    "answer": "Submit your medical certificate signed by a registered medical practitioner to your class counselor within 3 days of resuming college."
+  },
+  {
+    "faq_id": "FAQ14",
+    "category": "Examination",
+    "question": "What is the remedial examination policy for backlogs?",
+    "answer": "Remedial examinations are held within 30 days of result declaration. Students can register for backlogs via the student exam section."
+  },
+  {
+    "faq_id": "FAQ15",
+    "category": "Events",
+    "question": "Can I form inter-departmental teams for university hackathons?",
+    "answer": "Yes, inter-disciplinary teams comprising students from Computer Engineering, IT, and Electronics are encouraged for innovation competitions."
+  },
+  {
+    "faq_id": "FAQ16",
+    "category": "Portal Support",
+    "question": "Who should I contact if I notice discrepancies in my attendance or grades?",
+    "answer": "Contact your course instructor or use the Contact Us page to submit a grievance ticket directly to the Department of Computer Engineering."
+  }
+]

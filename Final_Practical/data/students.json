@@ -1,0 +1,178 @@
+[
+  {
+    "student_id": "25CE077",
+    "name": "Dwij Patel",
+    "email": "25ce077@charusat.edu.in",
+    "mobile": "9876543210",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.75
+  },
+  {
+    "student_id": "25CE015",
+    "name": "Dhairy Chauhan",
+    "email": "dhairy.ce@charusat.edu.in",
+    "mobile": "9428280245",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.6
+  },
+  {
+    "student_id": "25CE003",
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@charusat.edu.in",
+    "mobile": "9825101234",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 9.1
+  },
+  {
+    "student_id": "25IT012",
+    "name": "Diya Joshi",
+    "email": "diya.joshi@charusat.edu.in",
+    "mobile": "9724112345",
+    "department": "Information Technology",
+    "course": "B.Tech IT",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.9
+  },
+  {
+    "student_id": "25IT045",
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@charusat.edu.in",
+    "mobile": "9909234567",
+    "department": "Information Technology",
+    "course": "B.Tech IT",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.35
+  },
+  {
+    "student_id": "25CS022",
+    "name": "Ananya Desai",
+    "email": "ananya.desai@charusat.edu.in",
+    "mobile": "9898345678",
+    "department": "Computer Science",
+    "course": "B.Tech CSE",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 9.3
+  },
+  {
+    "student_id": "25CS058",
+    "name": "Harsh Trivedi",
+    "email": "harsh.trivedi@charusat.edu.in",
+    "mobile": "9712456789",
+    "department": "Computer Science",
+    "course": "B.Tech CSE",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 7.95
+  },
+  {
+    "student_id": "25EC008",
+    "name": "Pooja Shah",
+    "email": "pooja.shah@charusat.edu.in",
+    "mobile": "9824567890",
+    "department": "Electronics Engineering",
+    "course": "B.Tech EC",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.4
+  },
+  {
+    "student_id": "25EC031",
+    "name": "Kavya Parekh",
+    "email": "kavya.parekh@charusat.edu.in",
+    "mobile": "9978678901",
+    "department": "Electronics Engineering",
+    "course": "B.Tech EC",
+    "year": "Second Year",
+    "semester": 3,
+    "gpa": 8.15
+  },
+  {
+    "student_id": "24CE102",
+    "name": "Siddharth Varma",
+    "email": "siddharth.varma@charusat.edu.in",
+    "mobile": "9898789012",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "Third Year",
+    "semester": 5,
+    "gpa": 8.85
+  },
+  {
+    "student_id": "24IT088",
+    "name": "Meera Bhatt",
+    "email": "meera.bhatt@charusat.edu.in",
+    "mobile": "9723890123",
+    "department": "Information Technology",
+    "course": "B.Tech IT",
+    "year": "Third Year",
+    "semester": 5,
+    "gpa": 9.05
+  },
+  {
+    "student_id": "24CS074",
+    "name": "Yash Solanki",
+    "email": "yash.solanki@charusat.edu.in",
+    "mobile": "9825901234",
+    "department": "Computer Science",
+    "course": "B.Tech CSE",
+    "year": "Third Year",
+    "semester": 5,
+    "gpa": 8.2
+  },
+  {
+    "student_id": "23CE044",
+    "name": "Ishita Gandhi",
+    "email": "ishita.gandhi@charusat.edu.in",
+    "mobile": "9909012345",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "Fourth Year",
+    "semester": 7,
+    "gpa": 9.45
+  },
+  {
+    "student_id": "23IT029",
+    "name": "Devang Dave",
+    "email": "devang.dave@charusat.edu.in",
+    "mobile": "9879123456",
+    "department": "Information Technology",
+    "course": "B.Tech IT",
+    "year": "Fourth Year",
+    "semester": 7,
+    "gpa": 8.1
+  },
+  {
+    "student_id": "26CE011",
+    "name": "Nirav Panchal",
+    "email": "nirav.panchal@charusat.edu.in",
+    "mobile": "9824234567",
+    "department": "Computer Engineering",
+    "course": "B.Tech CE",
+    "year": "First Year",
+    "semester": 1,
+    "gpa": 8.5
+  },
+  {
+    "student_id": "26CS005",
+    "name": "Tanvi Soni",
+    "email": "tanvi.soni@charusat.edu.in",
+    "mobile": "9712345678",
+    "department": "Computer Science",
+    "course": "B.Tech CSE",
+    "year": "First Year",
+    "semester": 1,
+    "gpa": 8.7
+  }
+]

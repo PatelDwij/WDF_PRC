@@ -49,12 +49,14 @@ main {
 
 section {
     background: #a8d3da;
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
     margin: auto;
     border-radius: 4px;
     border: 1px solid #777;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 35px 40px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -149,3 +151,102 @@ footer a {
 footer a:hover {
     color: red;
 }
+
+.error {
+    color: #c9184a;
+    font-size: 12px;
+    margin: 4px 0 0 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.success {
+    color: #1b4332;
+    background-color: #d8f3dc;
+    border: 1px solid #74c69d;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.strength-meter {
+    font-size: 12px;
+    margin: 4px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.strength-weak {
+    color: #c9184a;
+}
+
+.strength-medium {
+    color: #e85d04;
+}
+
+.strength-strong {
+    color: #2d6a4f;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+    section {
+        padding: 20px 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    table, tr, td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    tr td:first-child {
+        width: 100% !important;
+        background-color: #e3f4f8;
+        font-weight: bold;
+    }
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode header { background-color: #1a1a1a !important; }
+.dark-mode nav { background-color: #222 !important; }
+.dark-mode nav a { color: #30bfe3 !important; }
+.dark-mode section {
+    background: #1e1e1e !important;
+    border-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode table {
+    background-color: #252525 !important;
+    border-color: #444 !important;
+}
+.dark-mode td {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode tr td:first-child {
+    background-color: #242424 !important;
+}
+.dark-mode label, .dark-mode h2 {
+    color: #e0e0e0 !important;
+}
+.dark-mode input, .dark-mode select {
+    background-color: #2c2c2c !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+.dark-mode .login-link a {
+    color: #30bfe3 !important;
+}
+.dark-mode footer { background-color: #1a1a1a !important; }

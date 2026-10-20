@@ -26,12 +26,15 @@
         </div>
 
         <nav>
+            <a href="index.html"> Home</a>
             <a href="Student_dashboard.html"> Dashboard</a>
+            <a href="Directory.html"> Directory</a>
             <a href="Profile.html"> Profile</a>
             <a href="Timetable.html"> Timetable</a>
             <a href="Attendance.html"> Attendance</a>
             <a href="courses.html"> Subjects</a>
             <a href="Notices.html"> Notices</a>
+            <a href="Contact.html"> Contact Us</a>
         </nav>
     </aside>
 
@@ -41,8 +44,10 @@
         <header class="topbar">
             <h1>Welcome to StudentHub Portal</h1>
             
+            <div>
                 <button id="theme-toggle" class="logout" style="background-color: #333; margin-right: 10px;">🌙 Theme</button>
-                <button class="logout">Logout</button>
+                <button class="logout" onclick="location.href='Login.html'">Logout</button>
+            </div>
            
         </header>
 
@@ -87,6 +92,7 @@
             <h2>Quick Services</h2>
             <div class="services">
                 <button id="open-modal-btn">Show Status</button>
+                <button onclick="location.href='Directory.html'">Directory & Events</button>
                 <button onclick="location.href='Timetable.html'">Timetable</button>
                 <button onclick="location.href='Attendance.html'">Attendance</button>
                 <button onclick="location.href='courses.html'">Subjects</button>

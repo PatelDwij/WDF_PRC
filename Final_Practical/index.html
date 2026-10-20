@@ -1,44 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>StudentHub Portal</title>
-
-        <link rel="Stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="Style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <!-- 1. Notification Banner (Practical 4) -->
+        <div id="notification-banner" class="banner">
+            <span>📢 <strong>Notice:</strong> Welcome to CHARUSAT StudentHub Portal — Practical evaluations in progress.</span>
+            <button id="close-banner" aria-label="Dismiss Notification">✖</button>
+        </div>
+
+        <!-- 2. Header with Logo, Title, and Theme Switcher -->
         <header>
+            <div class="header-controls">
+                <button id="theme-toggle" type="button">🌙 Theme</button>
+            </div>
             <img src="images (1).jpg" alt="Student Logo">
             <h1>Student Hub Portal</h1>
             <p><i><b>Your Centralized Academic Portal</b></i></p>
             <hr>
-
         </header>
 
+        <!-- 3. Navigation with Mobile Hamburger Menu -->
         <nav>
+            <button class="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
             <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="Student_dashboard.html">Student Dashboard</a> </li>
-                <li> <a href="Faculty_dashboard.html">Faculty Dashboard</a> </li>
-                <li> <a href="Login.html">Login</a> </li>
-                <li> <a href="Register.html">Register</a> </li>
-            
-                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Student_dashboard.html">Student Dashboard</a></li>
+                <li><a href="Directory.html">Directory</a></li>
+                <li><a href="Faculty_dashboard.html">Faculty Dashboard</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
         <main>
+            <!-- 4. Hero Content / Image Carousel Slider (Practical 4) -->
+            <div class="carousel-container" aria-label="Featured Highlights">
+                <div class="carousel-slide active">
+                    <h3>🎓 Centralized Academic Hub</h3>
+                    <p>Track your attendance, access semester subjects, and manage your student profile with ease.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>📅 Live Timetables & Schedules</h3>
+                    <p>Never miss a class! View your daily lectures, practical sessions, and lab timings in one click.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>📢 Real-Time Campus Notices</h3>
+                    <p>Stay informed with instant updates on academic deadlines, university circulars, and events.</p>
+                </div>
+
+                <button class="carousel-prev" aria-label="Previous Slide">❮</button>
+                <button class="carousel-next" aria-label="Next Slide">❯</button>
+
+                <div class="carousel-dots">
+                    <span class="carousel-dot active" aria-label="Slide 1"></span>
+                    <span class="carousel-dot" aria-label="Slide 2"></span>
+                    <span class="carousel-dot" aria-label="Slide 3"></span>
+                </div>
+            </div>
+
+            <!-- 5. Main Welcome Section -->
             <section>
-                <h3>Welcome to the Student Hub Portal</h3>
+                <h2>Welcome to Student Hub Portal</h2>
                 <p><i>Manage your courses, track attendance, and stay updated with the latest campus notices all in one place.</i></p>
                 <hr>
 
-                <a href="Login.html"><button >Login To Portal</button></a>
-                <a href="Register.html"><button>Create An Account</button></a>
+                <a href="Login.html"><button type="button">Login To Portal</button></a>
+                <a href="Register.html"><button type="button">Create An Account</button></a>
+                <button id="open-modal-btn" type="button">Portal Status</button>
+            </section>
+
+            <!-- 6. Collapsible FAQ Section (Practical 4) -->
+            <section class="faq-section">
+                <h3>Frequently Asked Questions (FAQ)</h3>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">How do I access my enrolled subjects and courses?</button>
+                    <div class="faq-answer">
+                        <p>Navigate to the <strong>Subjects</strong> page from the dashboard menu to see your enrolled course codes, titles, and credit allocations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">Where can I check my attendance records?</button>
+                    <div class="faq-answer">
+                        <p>Visit the <strong>Attendance</strong> tab to view your overall attendance percentage as well as course-by-course breakdown with visual progress meters.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">How can I register a new account on the portal?</button>
+                    <div class="faq-answer">
+                        <p>Click on <strong>Register</strong> in the top navigation bar, fill in your details with client-side validation, and submit the registration form.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">Who should I contact if I encounter issues with the portal?</button>
+                    <div class="faq-answer">
+                        <p>Use our <strong>Contact Us</strong> page to submit an inquiry directly to the administration or reach out via email at <code>admin@studenthub.edu</code>.</p>
+                    </div>
+                </div>
             </section>
         </main>
+
+        <!-- 7. Welcome Modal Popup (Practical 4) -->
+        <div id="welcome-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Portal Status</h2>
+                <p>✅ All academic services are operating normally.</p>
+                <p>Welcome to CHARUSAT Semester 3 StudentHub Portal!</p>
+            </div>
+        </div>
+
         <footer>
             <hr>
             <p>&copy; 2026 Dwij Patel; All Rights Reserved</p>
