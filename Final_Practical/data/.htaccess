@@ -1,0 +1,12 @@
+# StudentHub Portal - Data Storage Security (Practical 7)
+# Protect user registration files and sensitive storage datasets from direct public download.
+
+<FilesMatch "^(registrations\.json|students\.csv|\..*)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>

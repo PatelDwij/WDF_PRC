@@ -1,0 +1,61 @@
+[
+    {
+        "id": "REG-20261019-001",
+        "student_id": "25CE077",
+        "full_name": "Dwij Patel",
+        "email": "dwij.patel@charusat.edu.in",
+        "mobile": "9876543210",
+        "gender": "Male",
+        "year": "Second Year",
+        "semester": "3",
+        "course": "Computer Engineering",
+        "role": "Student",
+        "password_hash": "$2y$10$R9vYR6nMoUIFG97hLVAUo.rziTt7L5pekxZNz4fv97XcNfp0pF0Jq",
+        "registered_at": "2026-10-19 16:07:27",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "id": "REG-20261025-9904",
+        "student_id": "25CE099",
+        "full_name": "Aayush Varma",
+        "email": "aayush.varma@charusat.edu.in",
+        "mobile": "9898123456",
+        "gender": "Male",
+        "year": "Third Year",
+        "semester": "5",
+        "course": "Computer Engineering",
+        "role": "Student",
+        "password_hash": "$2y$10$CyaUgymqDEzF4XBFyMWpr.MlvjgxWyVWTERjFZaXqLmd7KyZmTWwO",
+        "registered_at": "2026-10-25 17:21:44",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "id": "REG-20261025-b37a",
+        "student_id": "25CE042",
+        "full_name": "Priyansh Shah",
+        "email": "priyansh.shah@charusat.edu.in",
+        "mobile": "9825123456",
+        "gender": "Male",
+        "year": "Second Year",
+        "semester": "3",
+        "course": "Computer Engineering",
+        "role": "Student",
+        "password_hash": "$2y$10$lyT4pG/p4KU1DWs/mXuki.RKFbNulfMnAOAT0IvwXiskosdR7sh/e",
+        "registered_at": "2026-10-25 18:13:05",
+        "ip_address": "::1"
+    },
+    {
+        "id": "REG-20261026-243d",
+        "student_id": "25CE099",
+        "full_name": "Test Student",
+        "email": "test.student99@studenthub.edu",
+        "mobile": "9825199999",
+        "gender": "Male",
+        "year": "Second Year",
+        "semester": "3",
+        "course": "Computer Engineering",
+        "role": "Student",
+        "password_hash": "$2y$10$DS9Hnz60wybOSsOsH5SVueBzWdRoz4PukDOZKdROw5McWRDy6TTqG",
+        "registered_at": "2026-10-26 22:27:24"
+    }
+]

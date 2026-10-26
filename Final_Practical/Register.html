@@ -19,17 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Student_dashboard.html">Dashboard</a></li>
                 <li><a href="Directory.html">Directory</a></li>
-                <li><a href="Login.html">Login</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Login.php">Sign In</a></li>
+                <li><a href="Register.php">Register</a></li>
+                <li><a href="Contact.php">Contact Us</a></li>
             </ul>
         </nav>
 
         <main>
         <section>
                 <h2><i>Register New Account</i></h2>
-                <p class="login-link">Already have an account? <a href="Login.html">Login Here</a></p>
-                <form id="registerForm">
+                <p class="login-link">Already have an account? <a href="Login.php">Sign In Here</a></p>
+                <form id="registerForm" action="Register.php" method="POST">
                 <table border="4" cellspacing="3" cellpadding="5">
                     <tr>
                         <td><label for="studentId">Student ID:</label></td>
@@ -142,7 +142,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="checkbox" id="terms" name="terms" style="width: auto; margin-right: 8px;">
+                            <input type="checkbox" id="terms" name="terms" value="1" style="width: auto; margin-right: 8px;">
                             <label for="terms" style="display: inline; font-weight: normal;">I accept the terms and conditions</label>
                             <p id="termsError" class="error"></p>
                         </td>

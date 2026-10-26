@@ -250,3 +250,76 @@ footer a:hover {
     color: #30bfe3 !important;
 }
 .dark-mode footer { background-color: #1a1a1a !important; }
+
+/* Practical 7 Alert Banners & Badges */
+.alert-banner {
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    padding: 14px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+    border: 1px solid #b6effb;
+}
+
+.practical-badge {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    vertical-align: middle;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.view-records-box {
+    margin-top: 20px;
+    font-size: 13px;
+    background: #e3f4f8;
+    padding: 14px 18px;
+    border-radius: 4px;
+    border: 1px solid #9cd5e2;
+    text-align: center;
+}
+
+.view-records-box a {
+    color: #0d47a1;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.view-records-box a:hover {
+    color: #c9184a;
+}

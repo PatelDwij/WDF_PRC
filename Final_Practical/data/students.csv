@@ -1,0 +1,5 @@
+"Student ID","Full Name",Email,Mobile,Gender,Year,Semester,Course,Role,"Password Hash","Registered At"
+25CE077,"Dwij Patel",dwij.patel@charusat.edu.in,9876543210,Male,"Second Year",3,"Computer Engineering",Student,$2y$10$R9vYR6nMoUIFG97hLVAUo.rziTt7L5pekxZNz4fv97XcNfp0pF0Jq,"2026-10-19 16:07:27"
+25CE099,"Aayush Varma",aayush.varma@charusat.edu.in,9898123456,Male,"Third Year",5,"Computer Engineering",Student,$2y$10$CyaUgymqDEzF4XBFyMWpr.MlvjgxWyVWTERjFZaXqLmd7KyZmTWwO,"2026-10-25 17:21:44"
+25CE042,"Priyansh Shah",priyansh.shah@charusat.edu.in,9825123456,Male,"Second Year",3,"Computer Engineering",Student,$2y$10$lyT4pG/p4KU1DWs/mXuki.RKFbNulfMnAOAT0IvwXiskosdR7sh/e,"2026-10-25 18:13:05"
+25CE099,"Test Student",test.student99@studenthub.edu,9825199999,Male,"Second Year",3,"Computer Engineering",Student,$2y$10$DS9Hnz60wybOSsOsH5SVueBzWdRoz4PukDOZKdROw5McWRDy6TTqG,"2026-10-26 22:27:24"
